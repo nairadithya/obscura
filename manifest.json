@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Instagram Reels Redirect",
+  "host_permissions": ["*://*.instagram.com/"],
+  "version": "1.0",
+  "description": "Redirects Reels To Curb The Scrolling",
+  "permissions": ["declarativeNetRequestWithHostAccess", "webNavigation"],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "reels",
+        "enabled": true,
+        "path": "./netRequestRule.json"
+      }
+    ]
+  },
+  "background": {
+    "scripts" : ["index.js"]
+  }
+}

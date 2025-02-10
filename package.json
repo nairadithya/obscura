@@ -1,0 +1,10 @@
+{
+  "name": "Instagram Reel Direct",
+  "version": "0.0.1",
+  "scripts": {
+    "startff": "web-ext run"
+  },
+  "devDependencies": {
+    "web-ext": "^8.4.0"
+  }
+}

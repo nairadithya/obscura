@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "http://www.instagram.com?reel/\\1"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https://www.instagram.com/reels/(.*)",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]
