@@ -1,5 +1,5 @@
 {
-  "name": "Instagram Reel Direct",
+  "name": "Obscura",
   "version": "0.0.1",
   "scripts": {
     "startff": "web-ext run",
