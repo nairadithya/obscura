@@ -2,9 +2,9 @@
   "manifest_version": 3,
   "name": "Obscura",
   "host_permissions": ["*://*.instagram.com/"],
-  "version": "1.0",
-  "description": "Redirects Reels To Curb The Scrolling",
-  "permissions": ["webNavigation", "tabs"],
+  "version": "0.1",
+  "description": "An improved Instagram experience.",
+  "permissions": ["webNavigation", "tabs", "activeTab"],
   "action": {
     "default_popup": "hello.html"
   },
