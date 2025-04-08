@@ -1,0 +1,9 @@
+a[href="https://aistudio.instagram.com/?utm_source=ig_web_nav"]
+{
+    display: none;
+}
+
+a[href^="https://www.threads.net/?"]
+{
+    display: none;
+}
