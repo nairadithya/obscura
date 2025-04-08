@@ -1,4 +1,0 @@
-* Instagram Reels Redirect
-A simple extension to redirect reels to a static individual page.
-** What It Does
-It converts the =/reels/= page to a simple =/reel/= page instead. This prevents you from scrolling.
