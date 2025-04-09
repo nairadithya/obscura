@@ -5,6 +5,11 @@ This is the repository containing the source code for my browser extension *obsc
 
 I'm using [[http:wxt.dev/][wxt]] to develop the extension. It's written in vanilla TypeScript with no frontend framework.
 
+The extension itself is straightforward:
+
+- It converts the reels feed to a static reel page, so you can only see at most one reel, this allows for intentional reel watching.
+- Removes the AI Studio, Threads, Explore And Reels buttons.
+
 * Usage
 Clone the repo and run,
 
@@ -13,5 +18,4 @@ bun i
 bun dev
 #+end_src
 
-To start a local browser with the extension installed
-
+To start a local browser with the extension installed.

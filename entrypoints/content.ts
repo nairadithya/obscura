@@ -3,14 +3,23 @@ import "./hiders.css";
 export default defineContentScript({
   matches: ["*://*.instagram.com/*"],
   main(ctx) {
-    document.addEventListener("DOMContentLoaded", (event) => {
-      element = document.querySelectorAll(
-        "a[href='https://aistudio.instagram.com/?utm_source=ig_web_nav']",
-      )[0];
-      if (element) {
-        element.remove();
+    function removeAllElementsAfterSuggestedPosts() {
+      const divs = document.querySelectorAll("div");
+      let suggestedPostsDiv = null;
+      for (const div of allDivs) {
+        if (
+          div.textContent &&
+          div.textContent.toLowerCase().includes("suggested posts")
+        ) {
+          suggestedPostsDiv = div;
+          console.log("HAHA I FOUND YOU SUGGESTED");
+          break;
+        }
       }
-      console.log("Hello content.");
+    }
+    document.addEventListener("DOMContentLoaded", (event) => {
+      console.log("HAHAI FOUND YOU SUGGESTED");
+      removeAllElementsAfterSuggestedPosts();
     });
   },
 });

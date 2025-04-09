@@ -1,6 +1,6 @@
 {
-  "name": "Obscura",
-  "description": "An extension to help improve instagram.",
+  "name": "Obscura, For Instagram.",
+  "description": "An extension to curb your Instagram addiction.",
   "private": true,
   "version": "0.1.0",
   "type": "module",
