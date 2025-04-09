@@ -1,0 +1,17 @@
+#+title: Obscura
+#+author: Adithya Nair
+
+This is the repository containing the source code for my browser extension *obscura*.
+
+I'm using [[http:wxt.dev/][wxt]] to develop the extension. It's written in vanilla TypeScript with no frontend framework.
+
+* Usage
+Clone the repo and run,
+
+#+begin_src bash
+bun i
+bun dev
+#+end_src
+
+To start a local browser with the extension installed
+
