@@ -9,11 +9,11 @@ The extension itself is straightforward:
 
 - It converts the reels feed to a static reel page, so you can only see at most one reel, this allows for intentional reel watching.
 - Removes the AI Studio, Threads, Explore And Reels buttons.
-
+  
 * Usage
 Clone the repo and run,
 
-#+begin_src bash
+#+begin_src bash :noeval
 bun i
 bun dev
 #+end_src
