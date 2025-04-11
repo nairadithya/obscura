@@ -1,5 +1,5 @@
 export default defineContentScript({
-    matches: ["*://*.instagram.com/reel/*"],
+    matches: ["*://*.instagram.com/"],
     main() {
         function deleteReelsSuggestions() {
             if (!location.pathname.startsWith("/reel/")) return;
@@ -19,6 +19,7 @@ export default defineContentScript({
             }
             return;
         }
+
         deleteReelsSuggestions();
 
         function removeAllElementsAfterSuggestedPosts() {
