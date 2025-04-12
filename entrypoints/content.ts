@@ -1,3 +1,5 @@
+import "./hiders.css";
+
 export default defineContentScript({
     matches: ["*://*.instagram.com/"],
     main() {
