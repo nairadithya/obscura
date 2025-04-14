@@ -1,6 +1,8 @@
 #+title: Obscura
 #+author: Adithya Nair
 
+#+HTML: <a rel="noreferrer noopener" href="https://addons.mozilla.org/firefox/addon/darkreader/"><img alt="Firefox Add-ons" src="https://img.shields.io/badge/Firefox-141e24.svg?&style=for-the-badge&logo=firefox-browser&logoColor=white"></a>
+
 This is the repository containing the source code for my browser extension *obscura*.
 
 I'm using [[http:wxt.dev/][wxt]] to develop the extension. It's written in vanilla TypeScript with no frontend framework.
