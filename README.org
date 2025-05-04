@@ -1,4 +1,4 @@
-#+HTML: <h1 align="center">Obscura, For Instagram</h1>
+#+HTML: <h1 align="center">Obscura, for Instagram</h1>
 #+author: Adithya Nair
 
 #+HTML: <p align="center"><a rel="noreferrer noopener" href="https://addons.mozilla.org/firefox/addon/obscura-for-instagram/"><img alt="Firefox Add-ons" src="https://img.shields.io/badge/Firefox-141e24.svg?&style=for-the-badge&logo=firefox-browser&logoColor=white"></a></p>

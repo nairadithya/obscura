@@ -1,7 +1,7 @@
 import "./hiders.css";
 
 export default defineContentScript({
-    matches: ["*://*.instagram.com/"],
+    matches: ["*://*.instagram.com/*"],
     main() {
         function deleteReelsSuggestions() {
             if (!location.pathname.startsWith("/reel/")) return;
