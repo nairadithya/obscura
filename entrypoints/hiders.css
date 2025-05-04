@@ -3,7 +3,7 @@ a[href="https://aistudio.instagram.com/?utm_source=ig_web_nav"]
     display: none;
 }
 
-a[href^="https://www.threads.net/?"]
+a[href^="https://www.threads.com/?"]
 {
     display: none;
 }
@@ -13,5 +13,10 @@ a[href^="/reels/"] {
 }
 
 a[href^="/explore/"] {
+    display: none;
+}
+
+a[href^="https://www.meta.ai/"]
+{
     display: none;
 }
