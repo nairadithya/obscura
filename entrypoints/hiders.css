@@ -8,13 +8,20 @@ a[href^="https://www.threads.com/?"]
     display: none;
 }
 
+a[href$="/reels/"],
 a[href^="/reels/"] {
-    display: none;
+  display: none !important;
 }
 
-a[href^="/explore/"] {
-    display: none;
+a[href$="/explore/"] {
+  display: none !important;
 }
+
+/* Hide videos that are reels based on the presence of a "Watch again on Instagram" label */
+div[style*="background-image"]:has(a[href*="/reel/"] > div > div > div > div > span:not([class])) {
+    display: none !important;
+}
+
 
 a[href^="https://www.meta.ai/"]
 {

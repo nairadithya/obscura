@@ -1,7 +1,7 @@
 #+HTML: <h1 align="center">Obscura, for Instagram</h1>
 #+author: Adithya Nair
 
-#+HTML: <p align="center"><a rel="noreferrer noopener" href="https://addons.mozilla.org/firefox/addon/obscura-for-instagram/"><img alt="Firefox Add-ons" src="https://img.shields.io/badge/Firefox-141e24.svg?&style=for-the-badge&logo=firefox-browser&logoColor=white"></a></p>
+#+HTML: <p align="center"><a rel="noreferrer noopener" href="https://addons.mozilla.org/firefox/addon/obscura-by-adithya-nair/"><img alt="Firefox Add-ons" src="https://img.shields.io/badge/Firefox-141e24.svg?&style=for-the-badge&logo=firefox-browser&logoColor=white"></a></p>
 
 This is the repository containing the source code for my browser extension *obscura*.
 
@@ -19,5 +19,3 @@ Clone the repo and run,
 bun i
 bun dev
 #+end_src
-
-To start a local browser with the extension installed.
