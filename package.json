@@ -11,11 +11,19 @@
     "build:firefox": "wxt build -b firefox",
     "zip": "wxt zip",
     "zip:firefox": "wxt zip -b firefox",
+    "test": "vitest run",
+    "test:e2e": "bun run build && bun run build:firefox && node test/e2e.mjs",
+    "test:watch": "vitest",
     "compile": "tsc --noEmit",
     "postinstall": "wxt prepare"
   },
   "devDependencies": {
-    "typescript": "^5.6.3",
-    "wxt": "^0.20.0"
+    "@playwright/test": "^1.64.0",
+    "geckodriver": "^7.0.0",
+    "happy-dom": "^20.9.0",
+    "selenium-webdriver": "^4.50.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.7",
+    "wxt": "^0.20.13"
   }
 }

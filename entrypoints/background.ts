@@ -1,17 +1,25 @@
+import {
+  shouldRedirectReelsUrl,
+  transformReelsToTv,
+} from "./lib/reel-redirect";
+
 export default defineBackground({
   persistent: true,
   type: "module",
   main() {
-    const browserAPI = typeof browser !== "undefined" ? browser : chrome;
-    browserAPI.webNavigation.onHistoryStateUpdated.addListener(
+    browser.runtime.onInstalled.addListener(async ({ reason }) => {
+      if (reason !== "install") return;
+      await browser.tabs.create({
+        url: browser.runtime.getURL("/get-started.html"),
+        active: true,
+      });
+    });
+
+    browser.webNavigation.onHistoryStateUpdated.addListener(
       (details) => {
-        if (
-          details.url.startsWith("https://www.instagram.com/reels/") &&
-          details.url.length >
-            "https://www.instagram.com/reels/?next=%2f".length
-        ) {
-          const newUrl: url = details.url.replace("/reels/", "/reel/");
-          browserAPI.tabs.update(details.tabId, { url: newUrl });
+        if (shouldRedirectReelsUrl(details.url)) {
+          const newUrl = transformReelsToTv(details.url);
+          browser.tabs.update(details.tabId, { url: newUrl });
         }
       },
       { url: [{ hostSuffix: "instagram.com" }] },

@@ -19,3 +19,21 @@ Clone the repo and run,
 bun i
 bun dev
 #+end_src
+
+* Testing
+
+Run the unit tests and TypeScript check with:
+
+#+begin_src bash :noeval
+bun run test
+bun run compile
+#+end_src
+
+Install Playwright's bundled Chromium and ensure Firefox is available on your =PATH= before running the real-extension checks:
+
+#+begin_src bash :noeval
+bunx playwright install chromium
+bun run test:e2e
+#+end_src
+
+The end-to-end command builds the Chromium and Firefox extensions. It loads Chromium through Playwright and Firefox through Selenium WebDriver and GeckoDriver. Both browsers exercise the built extension against local fixture content at the Instagram origin. The tests do not use a live Instagram account.
